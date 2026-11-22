@@ -45,6 +45,27 @@ Commands during your turn (AP cost in brackets):
 
 At the end, the replay is printed and saved to `last_replay.jsonl` (ignored by git).
 
+## How to win
+
+There are two ways the game ends:
+
+1. **Unmask the rival.** If you're at the same place as the other assassin, `x <#>` the
+   right person and you win on the spot. You get one accusation per turn.
+2. **Dawn.** After turn 30 (15 turns each), the player who collected more **true clues**
+   wins. A tie is a draw. True clues are NPC reports of real sightings. Bribed lies and
+   false-trail items don't count.
+
+Tips:
+
+- **A wrong accusation is costly.** The rival is told where you are, and that tip counts
+  as a true clue for *them*. Only accuse when your clues point to this place.
+- Clues are delayed. "Seen at the well 2 turns ago" means the rival *was* there, so think
+  about where they could have moved since.
+- Asking more townsfolk can raise your dawn score (if they aren't lying), but it uses AP you could spend moving or
+  hiding. Hiding stops townsfolk from noticing you until your next turn.
+- Change your disguise when you think you've been seen, because old clues describe your
+  old color.
+
 ## Test
 
 ```bash
